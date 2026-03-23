@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assement 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>Tifstay PG Listing page</h1> 
+  <h3 id="favcount">My Fovourites (0)</h3>
+
+  </header>
+
+    <div class="filters">
+         <label>Max Price: <span id="pricevalue"></span></label>
+   <input type="range" id="pricefilter" min="1000" max="10000" step="500" value="10000">
+   <br><br>
+    
+   <label>Room Type</label><br>
+   <input type="checkbox" value="single" class="roomfilter">Single
+   <input type="checkbox" value="double" class="roomfilter">Double
+   <input type="checkbox" value="triple" class="roomfilter">Triple<br><br>
+
+
+   <label>Gender:</label>
+   <input type="radio" name="gender" value="boys" class="genderfilter">Boys
+   <input type="radio" name="gender" value="girls" class="genderfilter">Girls
+   <input type="radio" name="gender" value="co-ed" class="genderfilter">Co-ed<br><br>
+
+
+   <label>
+    <input type="checkbox" id="availabilityfilter">Only Available
+   </label><br><br>
+
+   <select id="sortoption">
+  <option value="">Sort</option>
+  <option value="low">Price Low -> High</option>
+   <option value="high">Price High -> Low</option>
+    <option value="rating">Best rating->low</option>
+  
+  </select>
+  </div>
+  
+   
+  <div id="pgcontainer"></div>
+
+  <div id="modal">
+  <div class="modal-content">
+    <span id="closeModal">X</span>
+    <h2 id="modalName"></h2>
+    <p id="modalArea"></p>
+    <p id="modalPrice"></p>
+    <p id="modalRoom"></p>
+    <p id="modalGender"></p>
+    <p id="modalAmenities"></p>
+    <button id="contactbtn">Contact</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
